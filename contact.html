@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tal's Domain</title>
+	<link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="#"/>
+	<script src="validateForm.js"></script>
+</head>
+
+<body>
+    
+    <div class ="container">
+        <header id = "mainHeader">
+            <h2>
+                Tal's Meadow Hopping, Traffic Stopping Website
+            </h2>
+        <nav id="underbanner">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">Skills</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			</nav>
+        </header>
+    <form id="contactform" action="index.html" method="post">
+        <main>
+            <fieldset id="contactInfo">
+				<div class="left">
+                    <h3>Contact Information</h3>
+					<ul>
+						<li>
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text"/>
+							<p class="contactError error" id="name_error">* Required field</p>
+						</li>
+						<li>
+							<label for="phone">Phone</label>
+							<input id="phone" name="phone" type="tel"/>
+							<p class="contactError error" id="phone_error">* Required field</p>
+                            <p class="contactError error" id="phoneformat_error">
+								* Invalid phone number
+							</p>
+						</li>
+                        <li>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text"/>
+							<p class="contactError error" id="email_error">* Required field</p>
+							<p class="contactError error" id="emailformat_error">
+								* Invalid email address
+							</p>
+						</li>
+						<li>
+							<label for="comments">Comments</label>
+                            <textarea id = "comments" name="comments" rows = "5"></textarea>
+						</li>
+                    </ul>
+                    <div class="clear"></div>
+                    <p class="center">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="reset" id="clear">Reset</button>
+                    </p>
+                </div>
+            </fieldset>
+        </main>
+    </form>
+
+        <footer>
+            <nav id="bottomlist">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+				    <li><a href="about.html">Skills</a></li>
+				    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+        </footer>
+    </div>
+
+        
+</body>

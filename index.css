@@ -1,0 +1,199 @@
+/********f************
+    
+    Project 4 Stylesheet
+    Name: Tal Podsosony
+    Date:
+    Description:
+
+*********************/
+
+div.container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	background-color:#3d3939;
+	color:aliceblue;
+}
+
+
+header#mainHeader {
+	border: 0px;
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	margin: auto;
+	justify-content:center;
+	width: 100%;
+}
+
+main header{
+	font-size: 20px;
+	margin: auto;
+	justify-content:center;
+	width: 30%;
+	font-weight:bold;
+
+}
+
+  body{
+	background-image: url('images/stars.png');
+}
+
+nav#underbanner ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+	align-items: center;
+}
+
+#underbanner ul li{
+	padding: 15px 20px;
+}
+
+nav#underbanner ul li a{
+	flex: 100%;
+	font-size: 15px;
+	color: white;
+}
+
+nav#underbanner {
+	width: 100%;
+    background: linear-gradient(to bottom, #838383 0%,#798791 44%,#88abbd 100%);
+	border: 3px solid #000;
+    font-weight: bold;
+}
+
+nav#underbanner a:active, nav#underbanner a:hover{
+	color: rgb(153, 25, 25);
+}
+
+
+nav#underbanner ul li:not(:last-child):after {
+	content: "|";
+	color: black;
+	height: 15px;
+	margin: 70px;
+  }
+
+.hasImage img{
+	float:left;
+	padding-right: 5px;
+}
+
+.hasImage {
+	display: inline-block;
+}
+
+nav#bottomlist ul {
+	display: flex;
+	position: relative;
+	justify-content:center;
+	list-style: none;
+	width: 50%;
+	flex-wrap: wrap;
+	margin:auto;
+}
+
+nav#bottomlist ul li:not(:last-child):after {
+	content: "";
+	border: 1px solid rgb(0, 0, 0);
+	height: 15px;
+	margin: auto;
+  }
+
+nav#bottomlist ul li{
+	display: flex;
+	flex: auto;
+	padding: 5px 0px;
+	font-size: 12px;;
+	color:rgb(255, 255, 255);
+}
+
+nav#bottomlist ul li a{
+	color:rgb(255, 255, 255);
+}
+
+#contactInfo .left {
+	float: left;
+	width: 50%;
+}
+
+#contactInfo .right {
+	float: right;
+	width: 50%;
+}
+
+#contactInfo h3 {
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#contactInfo .left ul li {
+	width: 90%;
+	/*background: #EEE;*/
+	/*border:1px solid black;*/
+	border-radius: 5px;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+
+#contactInfo .left label {
+	display: inline-block;
+	width: 100px;
+	margin-top: 2px;
+}
+
+#contactInfo .left input {
+	display: inline-block;
+	width: 50%;
+	height: 26px;
+	padding-left: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+#contactInfo .left select {
+	display: inline-block;
+	height: 30px;
+	padding-left: 5px;
+	font-size: 14px;
+	line-height: 26px;
+	padding-top: 3px;
+	color: #333;
+}
+
+#submit,
+#clear {
+	/*display: block;
+	background:#C1F0F6;
+	color:#000;
+	border:none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #000;
+	font-size: 1.1em;
+	margin:3px auto;
+	height: 40px;
+	width:160px;
+	float:right;*/
+	height: 36px;
+	color: #333;
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+#submit {
+	margin-right: 15px;
+}
+
+#submit:hover,
+#clear:hover {
+	/*box-shadow: 2px 2px 2px #000;*/
+	cursor: pointer;
+}
